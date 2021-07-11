@@ -5,6 +5,8 @@ Code for the article [Robust integration of equations of motion with Euler metho
 
 ## Build and run to generate images
 ```
+$ git clone --recurse-submodules https://github.com/mgaillard/EulerIntegration.git
+$ cd EulerIntegration
 $ sh build.sh
 $ sh run.sh
 ```
