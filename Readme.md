@@ -60,7 +60,7 @@ We can see that the Moon is spiraling around the Earth, and as time goes, it is 
 We can see that the Moon is orbiting in a consistent circle around the Earth. Also, if we zoomed enough we would see that earth is also orbiting in a circle around the barycenter of the system (Earth + Moon).
 
 Here I plot the distance from Earth to Moon with respect to time, for one entire year.
-![Distance from the Earth to the Moon with the two different implementations](/images/euler-integration/distances.png){: .img-responsive}
+![Distance from the Earth to the Moon with the two different implementations](images/distances.png){: .img-responsive}
 We can see that with the naive Euler approach the distance is increasing over time. Note that in both cases the distance is oscillating, it's because the trajectory of the Moon around the Earth is not a perfect circle but an ellipsoid. In this case (only two bodies), it should be a perfect circle. It's my fault, because I didn't find the exact perfect initial conditions for the system to orbit in circles. But, to my credit, in reality this is what is happening anyway. Interestingly, we can see that the moon is orbiting for a total of about 13 periods in one year. Which we can check by dividing 365 days by 29.5 days (moon revolution period) = 12.4 periods. 
 
 ### Conclusion
