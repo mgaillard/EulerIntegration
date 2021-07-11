@@ -1,0 +1,14 @@
+#!/usr/bin/gnuplot
+reset
+set terminal png font arial 18 size 1280,960
+
+set xlabel 'Position X (m)'
+set ylabel 'Position Y (m)'
+
+set size square
+
+set xrange [-8e8:8e8]
+set yrange [-8e8:8e8]
+
+plot filename using 2:3 with points pt 7 title 'Trajectory of Earth', \
+     filename using 4:5 with points pt 7 title 'Trajectory of Moon'

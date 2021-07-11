@@ -1,0 +1,11 @@
+#!/usr/bin/gnuplot
+reset
+set terminal png font arial 18 size 1280,960
+
+set title "Distance from Earth to Moon w.r.t. time"
+
+set xlabel 'Time (s)'
+set ylabel 'Distance Earth to Moon (m)'
+
+plot 'positions_naive.csv' using 1:6 with points pt 7 title 'Distance naive Euler', \
+     'positions_symplectic.csv' using 1:6 with points pt 7 title 'Distance symplectic Euler'
